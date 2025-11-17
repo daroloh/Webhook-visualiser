@@ -1,0 +1,14 @@
+{
+  "name": "webhook-visualizer",
+  "version": "1.0.0",
+  "description": "Webhook Visualizer + Delivery Inspector - Full Stack Application",
+  "scripts": {
+    "start:backend": "cd backend && npm run dev",
+    "start:frontend": "cd frontend && npm start",
+    "install:all": "cd backend && npm install && cd ../frontend && npm install",
+    "build:frontend": "cd frontend && npm run build"
+  },
+  "keywords": ["webhook", "api", "inspector", "visualizer", "developer-tools"],
+  "author": "",
+  "license": "MIT"
+}

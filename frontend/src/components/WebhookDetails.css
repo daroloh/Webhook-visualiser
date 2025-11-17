@@ -1,0 +1,253 @@
+.webhook-details {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #1a1a1a;
+}
+
+.webhook-details-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem;
+  border-bottom: 1px solid #333;
+  background: #1a1a1a;
+}
+
+.webhook-details-header h3 {
+  color: #fff;
+  font-size: 1rem;
+}
+
+.header-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.replay-btn, .copy-btn {
+  padding: 0.5rem 1rem;
+  background: #252525;
+  color: #e0e0e0;
+  border: 1px solid #444;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.replay-btn:hover, .copy-btn:hover {
+  background: #2a2a2a;
+  border-color: #667eea;
+}
+
+.replay-panel {
+  display: flex;
+  gap: 0.5rem;
+  padding: 1rem;
+  background: #252525;
+  border-bottom: 1px solid #333;
+}
+
+.replay-panel input {
+  flex: 1;
+  padding: 0.5rem;
+  background: #1a1a1a;
+  border: 1px solid #444;
+  border-radius: 4px;
+  color: #e0e0e0;
+  font-size: 0.9rem;
+}
+
+.replay-panel button {
+  padding: 0.5rem 1.5rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.webhook-details-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1.5rem;
+}
+
+.details-section {
+  margin-bottom: 2rem;
+}
+
+.details-section h4 {
+  color: #fff;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.info-item {
+  background: #252525;
+  padding: 1rem;
+  border-radius: 6px;
+  border: 1px solid #333;
+}
+
+.info-label {
+  display: block;
+  font-size: 0.8rem;
+  color: #888;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.info-value {
+  display: block;
+  font-size: 1rem;
+  color: #e0e0e0;
+  font-weight: 500;
+}
+
+.info-value.method {
+  color: #49cc90;
+  font-weight: 700;
+}
+
+.info-value.status {
+  color: #49cc90;
+}
+
+.info-value.verified {
+  color: #49cc90;
+}
+
+.info-value.failed {
+  color: #f93e3e;
+}
+
+.headers-list {
+  background: #252525;
+  padding: 1rem;
+  border-radius: 6px;
+  border: 1px solid #333;
+}
+
+.header-item {
+  display: flex;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #333;
+  font-family: monospace;
+  font-size: 0.85rem;
+}
+
+.header-item:last-child {
+  border-bottom: none;
+}
+
+.header-key {
+  color: #888;
+  min-width: 200px;
+  font-weight: 600;
+}
+
+.header-value {
+  color: #e0e0e0;
+  word-break: break-all;
+}
+
+.payload-viewer {
+  background: #252525;
+  border-radius: 6px;
+  border: 1px solid #333;
+  overflow: hidden;
+}
+
+.raw-payload {
+  padding: 1rem;
+  margin: 0;
+  color: #e0e0e0;
+  font-family: monospace;
+  font-size: 0.85rem;
+  overflow-x: auto;
+  background: #1a1a1a;
+}
+
+.attempts-timeline {
+  background: #252525;
+  padding: 1rem;
+  border-radius: 6px;
+  border: 1px solid #333;
+}
+
+.attempt-item {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  background: #1a1a1a;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+.attempt-item:last-child {
+  margin-bottom: 0;
+}
+
+.attempt-number {
+  background: #667eea;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}
+
+.attempt-details {
+  flex: 1;
+}
+
+.attempt-status {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: #e0e0e0;
+  font-weight: 600;
+}
+
+.status-indicator {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.status-indicator.success {
+  background: #49cc90;
+  color: white;
+}
+
+.status-indicator.failure {
+  background: #f93e3e;
+  color: white;
+}
+
+.attempt-time, .attempt-response-time {
+  font-size: 0.85rem;
+  color: #888;
+}
